@@ -11,10 +11,98 @@
   --main-color: #0066ff;
   --text-color: #1e242c;
   --other-color: #414d60;
-  --second-color: #002b6b --bg-color: #ffffff;
+  --second-color: #002b6b;
+  --bg-color: #ffffff;
   --bg2-color: #fafafa;
   --h1-font: 5rem;
   --h2-font: 3.5rem;
   --p-font: 1rem;
   --font-family2: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 13%;
+  background: transparent;
+  z-index: 1000;
+  transition: all 0.6s ease;
+  background: darkgray;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--bg-color);
+}
+
+.logo span {
+  color: var(--main-color);
+  font-weight: 700;
+  font-family: var(--font-family2);
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 0 25px;
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.h-right {
+  display: flex;
+  align-items: center;
+}
+
+.h-btn {
+  display: inline-block;
+  padding: 8px 25px;
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid var(--bg-color);
+  border-radius: 40px;
+  transition: all 0.6s ease;
+}
+
+.h-btn:hover {
+  transform: translateY(-5px);
+  background: var(--main-color);
+}
+
+.h-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+#menu-icon {
+  z-index: 10001;
+  font-size: 45px;
+  color: var(--bg-color);
+  margin-left: 30px;
+  display: none;
 }
