@@ -23,6 +23,7 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  height: 2000px;
 }
 
 header {
@@ -233,4 +234,12 @@ header {
   to {
     transform: translateX(-100%);
   }
+}
+
+header.sticky {
+  background: linear-gradient(
+    110.6deg,
+    rgb(184, 142, 252) 2.2%,
+    rgb(104, 119, 244) 100.2%
+  );
 }
