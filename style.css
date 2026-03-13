@@ -202,3 +202,35 @@ header {
   text-align: center;
   cursor: pointer;
 }
+
+.infinite {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0px;
+}
+
+.t-img img {
+  max-width: 180px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.t-img {
+  display: inline-block;
+  white-space: nowrap;
+  animation: 30s slide infinite linear;
+}
+
+@keyframes slide {
+  form {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
