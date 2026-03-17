@@ -715,3 +715,25 @@ header.sticky {
   transform: translateY(-4px);
   color: var(--main-color);
 }
+
+.disclaimer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 13% 25px;
+}
+
+.end-text p {
+  font-size: 14px;
+  color: var(--other-color);
+}
+
+.scroll-up i {
+  font-size: 20px;
+  color: var(--bg-color);
+  background: var(--main-color);
+  padding: 12px;
+  border-radius: 2rem;
+}
